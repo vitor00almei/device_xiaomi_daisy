@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit vendor
+$(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
+
 # A/B
 AB_OTA_UPDATER := true
 
