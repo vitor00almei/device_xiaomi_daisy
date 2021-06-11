@@ -14,8 +14,12 @@
 # limitations under the License.
 #
 
+# Inherit from msm8953-common
+$(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # A/B
 AB_OTA_UPDATER := true
